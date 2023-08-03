@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    font-family: 'Gowun Batang', serif;
+    overflow-x: hidden;
+    border: red solid 1px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu img {
+    height: 4vh;
+}
+
+nav {
+    display: flex;
+    background-color: #781e16;
+    height: 8vh;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 4.5s forwards;
+}
+
+.portada {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    height: 95vh;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 70px;
+    justify-content: center;
+    width: 40vw;
+    overflow-y: hidden;
+}
+
+.titulos p {
+    padding: 10px;
+}
+
+.titulo-p {
+    opacity: 0;
+    animation: fadeIn 4.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+    opacity: 1;
+  }
+}
+
+.portada-nivora {
+    opacity: 0;
+    animation: animNivora 4.5s forwards;
+}
+
+@keyframes animNivora {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.portada-img {
+    width: 70vw;
+    opacity: 0;
+    animation: animPortada 4.5s forwards;
+}
+
+@keyframes animPortada {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.image-container1, .image-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-img {
+    width: 15vw;
+    height: 40vh;
+    transition: all 0.5s ease-out;
+}
+
+.card-img:hover {
+    scale: 1.1;
+    /*overflow-y: hidden;*/
+}
+
+
+
+.image-container1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: animImg1 4.5s forwards;
+  padding-top: 35px;
+  gap: 30px;
+}
+
+@keyframes animImg1 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.image-container2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: animImg2 4.5s forwards;
+    padding-bottom: 35px;
+    gap: 30px;
+  }
+  
+  @keyframes animImg2 {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.blog-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: blogImg 4.5s forwards;
+    scale: 0;
+    width: 50vw;
+}
+
+.blog-cards img {
+    opacity: 0;
+    animation: blogImg 4.5s forwards;
+    scale: 0;
+    height: 40vh;
+}
+
+@keyframes blogImg {
+    to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.general-card {
+    height: 50vh;
+    width: 15vw;
+}
+
+#contacto {
+    background-color: #781e16;
+    color: white;
+    opacity: 0;
+    animation: animFooter 4.5s forwards;
+}
+
+@keyframes animFooter {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.contact-title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+  
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    border-left: #781e16 solid 50px;
+    padding-bottom: 20px;
+}
+
+.especies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hr-sp1, .hr-sp2 {
+    width: 50vw;
+}
+
+.hr-sp1 {
+    animation: animImg1 4.5s forwards;
+}
+
+.hr-sp2 {
+    animation: animImg2 4.5s forwards;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 22px;
+}
